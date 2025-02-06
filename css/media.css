@@ -1,126 +1,95 @@
-@media screen and (max-width:1600px) {
-    header .rel, 
-    .hero .rel {
-        padding: 0 5rem;
-        width: 100%;
+@media screen and (max-width:1800px) {
+    .hero .img_wrap {
+        transform: translateX(-5rem);
+        width: auto;
+    }
+
+    .nav {
+        gap: 5rem;
+    }
+
+    .nav_list {
+        gap: 3rem;
+    }
+
+    .hero .tit_wrap h2 {
+        font-size: 7rem;
+        letter-spacing: -.25rem;
+    }
+
+    .hero_btn {
+        font-size: 2rem;
+        padding: .8rem 2rem;
+    }
+
+    .hero .tit_wrap p {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 21.4rem;
+        height: 32.8rem;
+    }
+
+    .card a {
+        padding: 0 2rem 4rem;
+    }
+
+    .card_t_wrap p.txt {
+        font-size: 1.2rem;
+    }
+    .card_t_wrap h4 {
+        font-size: 1.8rem;
+        margin: .5rem 0 1rem;
     }
 }
+
+
+@media screen and (max-width:1600px) {
     .hero .rel {
         justify-content: space-around;
     }
-@media screen and (max-width:1280px) {
-    header .rel, 
-    .hero .rel {
-        padding: 0 5rem;
+    .hero .rel,
+    .rel {
+        padding-left: 4rem;
+        padding-right: 4rem;
         width: 100%;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .hero {
+        background-image: url(../img/hero-bg-mob.png);
+    }
+    .hero .rel {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10rem;
+    }
+    .hero_btn {
+        margin-top: 2rem;
+    }
+    .hero .tit_wrap p {
+        display: none;
     }
     .nav_list {
         display: none;
     }
-
-    .hero .tit_wrap h2 {
-        font-size: 8rem;
+    .hero .img_wrap {
+        transform: translateX(0);
     }
-    .hero .tit_wrap p {
-        font-size: 2.5rem;
-    }
-    .card_wrap {
-        transform: translateX(-5rem);
-        align-content: center;
-    }
-
-    .rel {
-        width: 120rem;
-    }
-
-    .card_wrap a {
-        width: 20rem;
-        height: 20rem;
-    }
-
-    .card_wrap p.txt {
-        width: 20rem;
-        height: 20rem;
-    }
-
-    .card_wrap li {
-        width: 20rem;
-        height: 20rem;
-    }
-    .card_wrap {
-        width: auto;
-        height: auto;
-    }
-    .card_wrap p.txt {
-        font-size: 2rem;
-        transform: translateY(-3.5rem);
-    }
-}
-
-@media screen and (max-width:960px) {
-    .hero .rel {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column-reverse;
-    }
-
-    .arr_wrap {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .card_arrleft {
-        position: absolute;
-        left: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .card_arrright {
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-
-    
-
-    .tit_wrap {
+    .hero .tit_wrap {
+        order: 1;
         text-align: center;
     }
-
-    .arr_wrap {
-        display: block;
-        background-color: greenyellow;
-    }
 }
-
-@media screen and (max-width:360px) {
-
-    .hero .rel {
+@media screen and (max-width:860px) {
+    .card:not(.card1) {
+        display: none;
+    }
+    .hero .rel,
+    header .rel {
         padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    
-    .card_wrap li+li {
-        display: none;
-    }
-    .card_wrap li a {
-        width: 28.4rem;
-    }
-    .card_wrap {
-        display: initial;
-    }
-
-    .hero .tit_wrap h2 {
-        font-size: 2.8rem;
-    }
-    .hero .tit_wrap p {
-        display: none;
+        padding-right: 1.5rem ;
     }
 }
